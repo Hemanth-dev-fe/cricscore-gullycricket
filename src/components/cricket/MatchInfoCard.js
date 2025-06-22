@@ -52,7 +52,11 @@ const ball = legalBalls % 6;
         {/* Match details */}
         {showDetails && (
   <div className="mt-4 font-bold text-lg text-center space-y-2">
-    <p>Overs: {over}.{ball} /{matchInfo?.totalOvers}</p>
+    {
+      innings===1 && innings===2 &&(
+        <p>Overs: {over}.{ball} /{matchInfo?.totalOvers}</p>
+      )
+    }
    
 
     {/* Show First Innings only */}
