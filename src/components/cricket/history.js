@@ -103,21 +103,26 @@ if(matchId)
 
   <p className="font-bold text-2xl mt-5 text-green-700">Current Over:</p>
   <div className="flex gap-2 mt-2 mb-2">
-            {matcher.currentOver.map((ball, index) => (
+            {matcher.currentOver.map((ball, index) => {
 
-              
+              let bgColor = "bg-blue-500";
+                  if (ball === "W") bgColor = "bg-red-500";
+                  if (ball === "WD") bgColor = "bg-yellow-400";
+                  if (ball === "NB") bgColor = "bg-pink-500";
               
                 
-              <div
+              return(
+                <div
                 key={index}
-                className="bg-yellow-400 text-white font-semibold rounded w-10 h-10 flex items-center justify-center"
+                className={`${bgColor} text-white font-semibold rounded w-10 h-10 flex items-center justify-center`}
               >
                 
                 {ball}
               </div>
+              )
               
               
-            ))} 
+          })} 
         </div> 
   </>
 
