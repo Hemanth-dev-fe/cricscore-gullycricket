@@ -18,7 +18,7 @@ if(matchId)
   dispatch(getByIdMatchInfoThunk(matchId))
   
 }
-      },[matchId])
+      },[matchId,dispatch])
       const {innings,firstInnings,secondInnings}=useSelector((state)=>state.match)
       console.log("innings:",innings,"firstinnings:",firstInnings,"secondInnings:",secondInnings)
       const matcher=innings===1 ?firstInnings :secondInnings

@@ -23,7 +23,7 @@ const ball = legalBalls % 6;
     if (matchId) {
       dispatch(getByIdMatchInfoThunk(matchId));
     }
-  }, [matchId]);
+  }, [matchId,dispatch]);
 
   return (
     <div className="flex items-center justify-center bg-gray-50 w-full max-w-3xl">

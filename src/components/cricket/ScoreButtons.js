@@ -27,7 +27,7 @@ useEffect(() => {
     {
       router.push(`/matchHistory/${matchId1}`)
     }
-  }, [historyOvers,matchId1]);
+  }, [historyOvers,matchId1,router]);
 const {status,result}=useSelector((state)=>state.match)
 const handleRun = (val) => {
   dispatch(ballPlayed(val));
