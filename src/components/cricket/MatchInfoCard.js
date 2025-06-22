@@ -53,7 +53,7 @@ const ball = legalBalls % 6;
         {showDetails && (
   <div className="mt-4 font-bold text-lg text-center space-y-2">
     {
-      innings===1 && innings===2 &&(
+      status !== "Match Completed" &&(
         <p>Overs: {over}.{ball} /{matchInfo?.totalOvers}</p>
       )
     }
