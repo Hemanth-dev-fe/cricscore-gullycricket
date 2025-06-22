@@ -1,10 +1,7 @@
-'use client'
-import { use } from "react";
-import MatchScreen from "@/components/cricket/MatchScreen"; // make sure this is a client component
-import { useParams } from "next/navigation";
+import MatchScreen from "@/components/cricket/MatchScreen"; // ✅ must be a Client Component
 
-export default function MatchPage({params}) {
-  const { id: matchId } = useParams(); // ✅ unwraps the params
+export default function MatchPage({ params }) {
+  const { matchId } = params; // ✅ read from server props
 
   return <MatchScreen matchId={matchId} />;
 }
