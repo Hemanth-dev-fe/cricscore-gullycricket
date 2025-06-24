@@ -8,7 +8,7 @@ export default function Home() {
   const [enteredPassword, setEnteredPassword] = useState("");
   const [error, setError] = useState("");
 
-  const correctPassword = "Viratkohli#18"; // ✅ Change this to your actual password
+  const correctPassword = "Hemanth#3"; // ✅ Change this to your actual password
 
   const handlePasswordSubmit = () => {
     if (enteredPassword === correctPassword) {
