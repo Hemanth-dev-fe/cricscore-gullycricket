@@ -29,6 +29,7 @@ const updated = await MatchDetailModel.findByIdAndUpdate(
         
     }
     catch (err) {
+      console.error("PATCH error:", err);
         return NextResponse.json(
           { error: "Error saving match details", message: err.message },
           { status: 500 }

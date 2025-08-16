@@ -87,7 +87,7 @@ const handleRun = (val) => {
 
 const handleReset=()=>{
   dispatch(resetMatch())
-              router.push("/")
+              router.push("/hemanth/gully-cricket")
 }
 
  /* const handleReset = () => {
